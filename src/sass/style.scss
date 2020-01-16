@@ -1,7 +1,7 @@
 @import './reset';
 @import './variable';
 .wrapper {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     padding: 30px 20px;
 }
@@ -13,6 +13,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
 
 .logo {
@@ -26,7 +27,7 @@
 }
 
 .menu {
-    width: 24vw;
+    width: 30vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,6 +46,21 @@
                 text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
                 // border-bottom: 4px solid $color_blue;
             }
+        }
+    }
+}
+
+.dropdown-submenu {
+    position: relative;
+    & .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 30px;
+        min-width: 100px;
+        padding: 10px;
+        background-color: #ffffff38;
+        & li {
+            margin-bottom: 10px;
         }
     }
 }
@@ -130,7 +146,7 @@
     align-items: center;
     justify-content: space-between;
     & img {
-        width: calc((100%-125px) / 6);
+        width: calc((100% - 125px) / 6);
         &:not(:last-child) {
             margin-right: 25px;
         }
@@ -138,6 +154,7 @@
 }
 
 .description-block {
+    height: 500px;
     min-height: 42vw;
     width: 100%;
     background-color: $color_blue;
@@ -185,16 +202,26 @@
 }
 
 .slider-block {
-    max-height: 450px;
+    min-height: 450px;
     margin-bottom: 110px;
     padding-top: 145px;
     background-image: url('../img/slider_background.png');
     &_wrapper {
         width: 50vw;
+        position: relative;
+        bottom: -3vw;
         margin: 0 auto;
         padding: 10px;
         background-color: $color_white;
     }
+}
+
+.slider__img_wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: aqua;
+    opacity: 0.3;
 }
 
 .slick-slide img {
@@ -210,6 +237,7 @@
         width: 534px;
         margin-left: 30px;
         padding-top: 40px;
+        padding-bottom: 30px;
     }
     &__descriprion {
         margin-bottom: 40px;
@@ -316,17 +344,85 @@
     }
 }
 
-.dropdown-submenu {
-    position: relative;
-    & .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 30px;
-        min-width: 100px;
-        padding: 10px;
-        background-color: #ffffff38;
-        & li {
-            margin-bottom: 10px;
+@media only screen and (max-width: 800px) {
+    .logo {
+        width: 30vw;
+    }
+    .menu {
+        width: 45vw;
+        display: flex;
+    }
+    .inf-block {
+        width: 50vw;
+    }
+    .slick-slide img {
+        height: 55vw;
+    }
+    .slider-block_wrapper {
+        width: 80vw;
+    }
+    .footer-menu {
+        width: 100%;
+        flex-wrap: wrap;
+        &__item {
+            margin: 10px;
         }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .logo {
+        width: 50vw;
+    }
+    .menu {
+        display: none;
+    }
+    .description-block__header {
+        margin-top: 0;
+    }
+    .invite-block {
+        flex-wrap: wrap;
+        &__img {
+            width: 100%;
+        }
+    }
+    .inf-block {
+        width: 100%;
+    }
+    .invite-block__img {
+        background-size: contain;
+        min-height: 340px;
+    }
+    .slider-block {
+        padding-top: 70px;
+        min-height: 320px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .inf-block {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        &__header {
+            font-size: 4em;
+        }
+        &_add {
+            margin: 0;
+        }
+    }
+    .description-block {
+        height: 435px;
+        &__header {
+            font-size: 4em;
+        }
+    }
+    .contact-block_wrapper {
+        width: 100%;
+    }
+    .invite-block__img {
+        min-height: 240px;
+    }
+    .footer-menu {
+        justify-content: center;
     }
 }
