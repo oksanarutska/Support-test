@@ -1,6 +1,6 @@
 
 ## Result
-[Support-test](https://oksanarutska.github.io/Support-test/public/)
+[Support-test](https://oksanarutska.github.io/Support-test/public/index.html)
 ## Technology
 - scss
 - js
