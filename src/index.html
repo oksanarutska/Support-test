@@ -18,19 +18,18 @@
         <div class="wrapper">
             <div>
                 <div class="header">
-                    <img class="logo" src="./img/Logo.svg" alt="logo">
+                    <img class="logo" src="./img/logo.svg" alt="logo">
                     <nav>
-                        <ul class="menu">
+                        <button class="navbar-toggler" type="button" data-target="#navigationDropdown">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                        <ul id="navigationDropdown" class="menu">
                             <li class="menu__item dropdown-submenu">
                                 <a class="menu__item_view" href="https://www.google.com">home</a>
-                                <ul class="dropdown-menu">
-                                    <li class="menu__item"><a class="menu__item_view" href="https://www.google.com">home 1</a></li>
-                                    <li class="menu__item"><a class="menu__item_view" href="https://www.google.com">home 2</a></li>
-                                    <li class="menu__item"><a class="menu__item_view" href="https://www.google.com">home 3</a></li>
-                                </ul>
                             </li>
                             <li class="menu__item dropdown-submenu">
-                                <a class="menu__item_view" href="https://www.google.com">about us</a>
+                                <a class="menu__item_view  menu__item_arrow" href="#">about us</a>
                                 <ul class="dropdown-menu">
                                     <li class="menu__item"><a class="menu__item_view" href="https://www.google.com">about us 1</a></li>
                                     <li class="menu__item"><a class="menu__item_view" href="https://www.google.com">about us 2</a></li>
@@ -38,7 +37,7 @@
                                 </ul>
                             </li>
                             <li class="menu__item dropdown-submenu">
-                                <a class="menu__item_view" href="https://www.google.com">contact</a>
+                                <a class="menu__item_view  menu__item_arrow" href="#">contact</a>
                                 <ul class="dropdown-menu">
                                     <li class="menu__item"><a class="menu__item_view" href="https://www.google.com">contact 1</a></li>
                                     <li class="menu__item"><a class="menu__item_view" href="https://www.google.com">contact 2</a></li>
@@ -49,7 +48,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="inf-block">
+                <section class="inf-block">
                     <div class="inf-block_wrapper">
                         <h2 class="inf-block__header">
                             We can help.
@@ -63,7 +62,7 @@
                     <a class="main-button" href="https://www.google.com">
                             find help here
                         </a>
-                </div>
+                </section>
             </div>
             <div>
 
@@ -99,12 +98,12 @@
 
         <div class="contact-block">
             <div class="wrapper">
-                <div class="contact-block_wrapper">
+                <section class="contact-block_wrapper">
                     <h3 class="contact-block__header">McGrew Behavior Services Helps...</h3>
                     <p class="contact-block__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora in et dolorum voluptas vitae doloremque!</p>
                     <a class="main-button main-button_s" href="https://www.google.com"> contact us</a>
 
-                </div>
+                </section>
             </div>
         </div>
 
@@ -134,7 +133,7 @@
             </div>
             <div class="invite-block_wrapper">
                 <p class="invite-block__descriprion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="inf-block inf-block_add">
+                <section class="inf-block inf-block_add">
                     <div class="inf-block_wrapper">
                         <h2 class="inf-block__header">
                             Join Our Team
@@ -148,7 +147,7 @@
                     <a class="main-button main-button_blue" href="https://www.google.com">
                             find help here
                         </a>
-                </div>
+                </section>
             </div>
 
         </div>
