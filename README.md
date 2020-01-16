@@ -1,9 +1,8 @@
 
 ## Result
-[Bouncy](https://oksanarutska.github.io/bouncy/public/)
+[Support-test](https://oksanarutska.github.io/Support-test/public/)
 ## Technology
-- pug(jade)
-- sass
+- scss
 - js
 - jQuery
 - gulp
